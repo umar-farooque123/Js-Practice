@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: 700;
+    background-color: rgb(116, 243, 77);
+}
+
+h1 {
+    margin: 60px;
+    font-size: 44px;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+button {
+    margin: 10px;
+}
