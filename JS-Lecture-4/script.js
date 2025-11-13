@@ -7,25 +7,24 @@ let enteredPin = prompt("Enter your PIN:");
 
 if (enteredPin !== correctPin) {
     alert("Incorrect PIN!");
-} else {
-    // 3. Show the Main Menu
-    let choice = prompt(`
-Welcome to JS ATM 💳
+}
 
-1️⃣ Check Balance
-2️⃣ Withdraw
-3️⃣ Deposit
-4️⃣ Exit
+else {
+    let choice = prompt(
+        "Welcome to JS ATM 💳\n\n" +
+        "1️⃣ Check Balance\n" +
+        "2️⃣ Withdraw\n" +
+        "3️⃣ Deposit\n" +
+        "4️⃣ Exit\n\n" +
+        "Enter your choice (1-4):");
 
-Enter your choice (1-4):
-`);
-
-    // Handle each menu option
     if (choice === "1") {
         // Option 1 – Check Balance
         alert("Your balance is: $" + balance);
 
-    } else if (choice === "2") {
+    }
+
+    else if (choice === "2") {
         // Option 2 – Withdraw
         let withdrawAmount = Number(prompt("Enter amount to withdraw:"));
         if (withdrawAmount > balance) {
@@ -35,18 +34,25 @@ Enter your choice (1-4):
             alert("Withdrawal successful! New balance: $" + balance);
         }
 
-    } else if (choice === "3") {
+    }
+
+    else if (choice === "3") {
         // Option 3 – Deposit
         let depositAmount = Number(prompt("Enter amount to deposit:"));
         balance = balance + depositAmount;
         alert("Deposit successful! New balance: $" + balance);
 
-    } else if (choice === "4") {
+    }
+
+    else if (choice === "4") {
         // Option 4 – Exit
         alert("Thank you for using the ATM!");
 
-    } else {
+    }
+
+    else {
         // Invalid Input
         alert("Invalid option!");
     }
+
 }
